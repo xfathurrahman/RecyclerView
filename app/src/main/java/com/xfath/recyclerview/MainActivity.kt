@@ -16,8 +16,6 @@ class MainActivity : AppCompatActivity(){
         val view = binding.root
         setContentView(view)
 
-        "adwadwad"
-
         val listBahasa: ArrayList<BahasaPemprograman> = ArrayList()
 
         listBahasa.add(BahasaPemprograman("Kotlin", R.drawable.kotlin))
