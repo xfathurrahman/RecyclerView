@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">RecyclerView</string>
+    <string name="bahasa_pemrograman_mobile_populer_2021">Bahasa Pemrograman Mobile Populer 2021</string>
+    <string name="macam_bahasa">Macam Bahasa</string>
 </resources>
