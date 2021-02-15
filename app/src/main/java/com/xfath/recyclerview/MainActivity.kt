@@ -16,13 +16,13 @@ class MainActivity : AppCompatActivity(){
         val view = binding.root
         setContentView(view)
 
-        val listBahasa: ArrayList<BahasaPemprograman> = ArrayList()
+        val listBahasaModel: ArrayList<BahasaPemprogramanModel> = ArrayList()
 
-        listBahasa.add(BahasaPemprograman("Kotlin", R.drawable.kotlin))
-        listBahasa.add(BahasaPemprograman("Java", R.drawable.java))
-        listBahasa.add(BahasaPemprograman("Flutter", R.drawable.flutter))
+        listBahasaModel.add(BahasaPemprogramanModel("Kotlin", R.drawable.kotlin))
+        listBahasaModel.add(BahasaPemprogramanModel("Java", R.drawable.java))
+        listBahasaModel.add(BahasaPemprogramanModel("Flutter", R.drawable.flutter))
 
-        val bahasaAdapter = BahasaAdapter(listBahasa) { item ->
+        val bahasaAdapter = BahasaAdapter(listBahasaModel) { item ->
             Toast.makeText(this, item.namaBahasa, Toast.LENGTH_LONG).show()
         }
 

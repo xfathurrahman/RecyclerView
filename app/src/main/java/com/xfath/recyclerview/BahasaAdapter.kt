@@ -6,8 +6,8 @@ import androidx.recyclerview.widget.RecyclerView
 import com.xfath.recyclerview.databinding.ItemBahasaBinding
 
 class BahasaAdapter(
-    private val bahasaPemprogramanList: ArrayList<BahasaPemprograman>,
-    private val listener: (BahasaPemprograman) -> Unit
+    private val bahasaPemprogramanModelList: ArrayList<BahasaPemprogramanModel>,
+    private val listener: (BahasaPemprogramanModel) -> Unit
 ) : RecyclerView.Adapter<BahasaAdapter.BahasaViewHolder>() {
 
     inner class BahasaViewHolder(val binding: ItemBahasaBinding) : RecyclerView.ViewHolder(binding.root)
@@ -18,13 +18,13 @@ class BahasaAdapter(
     }
 
     override fun onBindViewHolder(holder: BahasaViewHolder, position: Int) {
-        holder.binding.tvMacam.text = bahasaPemprogramanList[position].namaBahasa
-        holder.binding.image.setImageResource(bahasaPemprogramanList[position].image)
+        holder.binding.tvMacam.text = bahasaPemprogramanModelList[position].namaBahasa
+        holder.binding.image.setImageResource(bahasaPemprogramanModelList[position].image)
 
-        val item = bahasaPemprogramanList[position]
+        val item = bahasaPemprogramanModelList[position]
         holder.itemView.setOnClickListener { listener(item)
         }
     }
 
-    override fun getItemCount(): Int = bahasaPemprogramanList.size
+    override fun getItemCount(): Int = bahasaPemprogramanModelList.size
 }
