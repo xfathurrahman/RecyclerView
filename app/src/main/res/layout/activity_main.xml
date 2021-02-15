@@ -9,7 +9,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textAlignment="center"
+        android:gravity="center"
         android:background="@color/black"
         android:textColor="@color/white"
         android:text="@string/bahasa_pemrograman_mobile_populer_2021"/>
